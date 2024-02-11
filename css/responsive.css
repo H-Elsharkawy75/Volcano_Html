@@ -2412,7 +2412,10 @@
     
     /* price box 7 */
     .pricing-box-style7 li, .pricing-box-style7 li:first-child, .pricing-box-style7 li, .pricing-box-style7 li:first-child, .pricing-box-style7 li:last-child  { height: auto; padding: 30px 15px; }
-
+.contatcUsPage form {
+    padding: 50px 15px;
+    background: #fbfbfb;
+}
 }
 
 @media (max-width: 640px) {
