@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 18, 2024 at 05:26 PM
+-- Generation Time: Feb 19, 2024 at 08:17 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -41,9 +41,7 @@ CREATE TABLE `abouts` (
 --
 
 INSERT INTO `abouts` (`id`, `client_image`, `title`, `description`, `created_at`, `updated_at`) VALUES
-(1, 'aboutimage/0J1hvaRwc3uv0gLk811fbt45MBeCmxwINqb7mZRx.jpg', 'aas', 'asd', '2024-02-15 11:23:18', '2024-02-15 11:23:18'),
-(2, 'aboutimage/ieSowXWSZCyMQT5qrKRhuknANP7P2qspnYjwlI0p.jpg', 'aas', 'asd', '2024-02-15 11:24:08', '2024-02-15 11:24:08'),
-(3, 'aboutimage/G6fkmuT7Hs6KB1iqbvMcYb7zAU8F70aKcek3LoGl.jpg', 'a', 'a', '2024-02-15 11:24:17', '2024-02-15 11:24:17');
+(6, 'aboutimage/a4l6i9NGXIe5wt7gCjjsc65dC7TZxPYt7sqYIciN.png', 'ahmed', 'magdy', '2024-02-19 15:37:38', '2024-02-19 15:37:38');
 
 -- --------------------------------------------------------
 
@@ -117,7 +115,8 @@ INSERT INTO `messages` (`id`, `firstname`, `lastname`, `subject`, `email`, `phon
 (11, 'nes', NULL, NULL, 'test@test.com', NULL, 's', '2024-02-15 20:20:31', '2024-02-15 20:20:31'),
 (12, 'asd', NULL, NULL, 'test@test.com', NULL, 'asdadasd', '2024-02-15 20:20:57', '2024-02-15 20:20:57'),
 (13, 'Ahmed', NULL, NULL, 'ahmed_hamody56@yahoo.com', NULL, 'sadd', '2024-02-15 20:21:17', '2024-02-15 20:21:17'),
-(14, 'Ahmed', NULL, NULL, 'ahmed.hamody5532@gmail.com', NULL, 'asd', '2024-02-15 20:25:02', '2024-02-15 20:25:02');
+(14, 'Ahmed', NULL, NULL, 'ahmed.hamody5532@gmail.com', NULL, 'asd', '2024-02-15 20:25:02', '2024-02-15 20:25:02'),
+(15, 'Ahmed', NULL, NULL, 'ahmed.hamody5532@gmail.com', NULL, 'NEW Message', '2024-02-19 13:11:12', '2024-02-19 13:11:12');
 
 -- --------------------------------------------------------
 
@@ -198,7 +197,14 @@ CREATE TABLE `projects` (
 --
 
 INSERT INTO `projects` (`id`, `name`, `image`, `imageurl`, `created_at`, `updated_at`) VALUES
-(1, 'مصر', 'projectimage/F6GQQ6fczayMzf73rtp69xFaBL8oDKSD5MPD7XhR.jpg', NULL, '2024-02-13 11:43:41', '2024-02-13 11:43:41');
+(3, 'DIPLO GATE', 'projectimage/rfQpuP8CQBGESJfqn6kOhG5u8FF5bjjwnJnHWoO1.png', NULL, '2024-02-19 15:49:01', '2024-02-19 15:49:01'),
+(4, 'NEW ALAMEIN', 'projectimage/ABaRoUYSUpt9oZ9GIFpESI9caPMa7PkS26kJbrog.png', NULL, '2024-02-19 15:49:16', '2024-02-19 15:49:16'),
+(5, 'DIPLO GATE', 'projectimage/tYe64QIY6lv4P5ndkCXY2BZMh8NcwP1Ri0YKET9D.png', NULL, '2024-02-19 15:49:31', '2024-02-19 15:49:31'),
+(6, 'BOO ISLANDS', 'projectimage/cj6fqowcRJhA0JDz1lQUDk3l4660LkGKUqBG7o9D.png', NULL, '2024-02-19 15:50:00', '2024-02-19 15:50:00'),
+(7, 'HACIENDA BAY', 'projectimage/iQ6J7khUvnaLEiXXLqVOrj7NtFyH647U9azrPoXQ.png', NULL, '2024-02-19 15:50:14', '2024-02-19 15:50:14'),
+(8, 'MARASSI', 'projectimage/5qxsjjt10zHSfmCVqyn49hfXfYvtw8y6aL4PRiAN.png', NULL, '2024-02-19 15:50:29', '2024-02-19 15:50:29'),
+(9, 'EL KARMA', 'projectimage/SDEUOD7nJvDGdGLmDN1P7hqCJaPvgD5w5g7LkmP9.png', NULL, '2024-02-19 15:50:42', '2024-02-19 15:50:42'),
+(10, 'STELLA HEIGHTS', 'projectimage/u8p2YyYW5k0ltIBnXeP0nvjZkwFsvGo3Gk8BAzEq.png', NULL, '2024-02-19 15:51:01', '2024-02-19 15:51:01');
 
 -- --------------------------------------------------------
 
@@ -220,9 +226,10 @@ CREATE TABLE `services` (
 --
 
 INSERT INTO `services` (`id`, `name`, `description`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'hamody', 'dee', 'serviceimage/VV8Y8NSoHEYZjx4GfrIcNfOlrJOETa7TMOqwuaxm.jpg', '2024-02-13 11:42:50', '2024-02-13 11:42:50'),
-(2, 'hamody', 'dasdaswewedadasdadasdasdasdaswewedadasdadasdasdasdasdfdsvscsdscdsdscdsscsdcdscdscdscdscdscdscdscdsc', 'serviceimage/yQwRZwOyl4Vk3eMDLCkSW92UOgUy2VsVisonDvrw.jpg', '2024-02-15 11:15:22', '2024-02-15 11:15:24'),
-(3, 'hamody', 'gf', 'serviceimage/5nzZyN7fmzAes5dljKeKJHgSgiCXRPVpxcADxM91.jpg', '2024-02-15 11:15:55', '2024-02-15 11:15:55');
+(4, 'Steel Production', 'Professional and technical staff and advanced processing and production eqipment, strict process inspection and factory inspection,', 'serviceimage/VfMs7pc0zp4U8VO7wUaiDXtseEvqlliHT4te0D19.png', '2024-02-19 15:47:19', '2024-02-19 15:47:19'),
+(5, 'Billboard Poster Printing', 'Our finished outdoor billboard posters are printed using UV stable inks, which means they have far more contrast and impact than', 'serviceimage/1iJk0YeWAWCnTu2KHB7JBqlIZ65QSClK05Yzu2aF.png', '2024-02-19 15:47:43', '2024-02-19 15:47:43'),
+(6, 'Fast Installation', 'TIn addition to our expertise, what sets us apart is our ability to deliver installations quickly. We value your time, and our efficient', 'serviceimage/IXaxTht6iLFfh2kZHkBqKHv2htSZCfX1TJMd4QsL.png', '2024-02-19 15:48:03', '2024-02-19 15:48:03'),
+(7, '24/7 Service Support', 'Customer satisfaction is our first priority. To ensure that, we offer round-the-clock service support. Experienced and professional staff is', 'serviceimage/pJdw3ZglAB2lTJ59dzGvkMTWUNWAYbWXhDBPP8DP.png', '2024-02-19 15:48:20', '2024-02-19 15:48:20');
 
 -- --------------------------------------------------------
 
@@ -248,8 +255,9 @@ CREATE TABLE `teams` (
 --
 
 INSERT INTO `teams` (`id`, `member_name`, `member_image`, `member_role`, `member_facebook`, `member_twitter`, `member_linkedin`, `member_gmail`, `created_at`, `updated_at`) VALUES
-(1, 'da', 'teamimage/7XaOTJfSScH6TwaXAQyO8XQfbkkf6jKGXxBCfiPL.jpg', 'dasd', NULL, NULL, NULL, NULL, '2024-02-13 11:39:29', '2024-02-13 11:39:29'),
-(2, 'trt', 'teamimage/DEefFVaz7f07BNdqTJjxXml3vCOY14eenc3hqu2S.jpg', 'trtrt', NULL, NULL, NULL, NULL, '2024-02-13 11:47:31', '2024-02-13 11:47:31');
+(5, 'MOHAMED DARWISH', 'teamimage/ikrStPPezNkLNYa6PQcUgB6IBvB2yBrVjC8VC2V0.jpg', 'Co-Founder', 'www.google.com', 'www.google.com', 'www.google.com', 'www.google.com', '2024-02-19 16:11:38', '2024-02-19 16:11:38'),
+(6, 'MOHAMED DARWISH', 'teamimage/uNE9aGewLar8qmnCLuhSokWRknflNRHFx4BH8kMb.png', 'CEO', 'www.google.com', 'www.google.com', 'www.google.com', 'www.google.com', '2024-02-19 18:16:36', '2024-02-19 18:16:36'),
+(7, 'MOHAMED DARWISH', 'teamimage/SweayOwFn9qrwnA5J8ro2v35my9xBnmyhy2C1ela.png', 'Co-Founder', 'www.google.com', 'www.google.com', 'www.google.com', 'www.google.com', '2024-02-19 18:17:01', '2024-02-19 18:17:01');
 
 -- --------------------------------------------------------
 
@@ -357,7 +365,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `abouts`
 --
 ALTER TABLE `abouts`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `admins`
@@ -375,7 +383,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -393,19 +401,19 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `projects`
 --
 ALTER TABLE `projects`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `teams`
 --
 ALTER TABLE `teams`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `users`
